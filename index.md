@@ -1,5 +1,5 @@
-# Welcome to ERNIE
-<img align="left" src="ERNIE.png" width="250" height="200" border="120">
+
+<img align="right" src="ERNIE.png" width="250" height="200" border="120">
 
 ## _Netelabs has a position open for a Data Engineer https://shar.es/a0Cfis to work on ERNIE._
 
