@@ -22,7 +22,7 @@ This project has been funded in part as a Fast Track Small Business Innovative R
 This repo was created in Aug 2017, we wrote up an acccompanying article in 2018 that is sitting on BioRxiv. The citation for the article is 
 ```
 @article{keserci_ernie:_2018,
-	title = {{ERNIE}: {A} {Data} {Platform} for {Research} {Assessment}},
+	title = {ERNIE}: {A} {Data} {Platform} for {Research} {Assessment},
 	url = {https://www.biorxiv.org/content/early/2018/07/19/371955},
 	doi = {10.1101/371955},
 	abstract = {},
