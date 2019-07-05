@@ -19,6 +19,10 @@ ul {
     -moz-columns: 2;
 }
 
+p {
+    margin-bottom: 2rem;
+}
+
 /*div {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -26,13 +30,31 @@ ul {
     margin-left: 30px;
 }*/
 
+.nete-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nete-logo img {
+    height: 30px;
+    margin-right: 2px;
+}
+
 .main-icon {
-    display: inline-block;
-    margin: 0;
+    position: relative;
+    display: block;
+    margin: 0 auto;
     padding: 0;
     fill: #fff;
     /* width: 10rem; */
-    height: 3rem;
+    height: 5.6rem;
 }
 
 nav {
@@ -85,6 +107,7 @@ header .sub-title {
 
 .site-title {
     position: absolute;
+    left: 0;
     bottom: 10vh;
     display: block;
     width: 100%;
@@ -97,11 +120,17 @@ header .sub-title {
 
 .sub-title {
     display: block;
-    /* margin-top: -1.5rem; */
+    margin-top: 1rem;
     margin-left: 0.35rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 400;
     line-height: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .sub-title {
+        font-size: 6vw;
+    }
 }
 
 .callout {
@@ -168,4 +197,12 @@ main {
     font-size: 1rem;
     line-height: 1.75rem;
     max-width: 45rem;
+}
+
+main ul {
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
+    list-style-position: inside;
 }
