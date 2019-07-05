@@ -3,93 +3,53 @@
 
 <head>
 
-<style type="text/css">
-  {% include critical.css %}
-  ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-body {
-  bcakground-color: #CED8F6
-}
-div {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-right: 150px;
-  margin-left: 30px;
-  background-color: white;
-}
-
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-body {
-  background-color: #E0F8EC
-}
-</style>
 <title>ERNIE Homepage</title>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
-<div>
-<img style="float:left"; src="ERNIE.png" width="250" height="200" hspace ="10" vspace="5"> <p> <font size="+3"> <a href="https://github.com/NETESOLUTIONS/ERNIE">ERNIE (Enhanced Research Network Informatics Environment)</a></font><font size="+1"> originates from (i) a thought experiment (inspired by Williams et al. Cell 163:21-23, 2015) 
-intended to address the research assessment problem (ii) our  prior experience in building a database of 
-linked data for internal use by a federal agency. These interests grew into an effort to create ERNIE as 
-a knowledge resource for research assessment that would aggregate diverse data for discover and enable 
-multidimensional measurements of research achivements while being accesible to the broader community. ERNIE 
-is designed and developed by <a href="https://www.nete.com">NET ESolutions Corporation (NETE)</a>. 
-The project has been funded in part as a Fast Track Small Business Innovative Research award with Federal funds 
-from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and 
-Human Services. In Feb 2018, Phase I was completed. Phase II has since been awarded and commenced on Sept30, 2018. 
-Phase II is focused on building a user community and 'productionizing' the platform. We gratefully acknowledge 
-constructive critique and advice from the Program staff at NIDA.</p>
+<header>
+    <nav>
+    <svg version="1.1" class="nav-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 35.04802" style="enable-background:new 0 0 100 35.04802;" xml:space="preserve">
+        <title>Glasses</title>
+        <path d="M50,11.4984c1.51091,0.37516,2.76186,1.43082,3.38571,2.85714c3.38572,10.92857,4.28572,11.17143,8.57143,16.05714
+        	s17.14285,6.27143,25.97143,2.38571c8.82858-3.88571,9.75713-20.98571,9.75713-20.98571L100,9.35554V1.6984
+        	c-7.42857-2.34286-29.84286-2.62857-44.54286,1.5c-3.58546,0.37511-7.20026,0.37511-10.78571,0
+        	C29.32857-1.04446,7.14286-0.53017,0,1.6984v7.65714l2.31429,2.45714c0,0,1.01428,17.14286,9.78571,21
+        	s21.71428,2.51428,25.98571-2.42857s5.14286-5.14285,8.57143-16.05714C47.2791,12.92167,48.51114,11.87917,50,11.4984z
+        	 M83.49999,31.4984c-8.78571,2.12858-18.07143,0.87143-21.82857-6.02857c-3.75714-6.9-4.64286-14.18571-1.88571-16.81429
+        	c0,0,2.85714-3.64286,10.78572-4.14286s19.71428-1.68571,22.28571,5.34287c2.57143,7.02857-0.57143,19.57143-9.35715,21.7V31.4984z
+        	 M7.14286,9.85554c2.51429-7.02857,14.28572-5.71429,22.21428-5.27143c7.92857,0.44286,10.78572,4.14286,10.78572,4.14286
+        	c2.75714,2.62857,1.88571,9.91428-1.88572,16.81429s-13.04286,8.15714-21.82857,6.02857S4.7,16.88411,7.14286,9.85554z"/>
+    </svg>
+    <span>ERNIE</span>
+    </nav>
+    <h1 class="site-title">ERNIE<h1>
+    <div class="sub-title">Enhanced Research Network Informatics Environment</div>
+</header>
 
-<p> We are not involved  with <a href="https://github.com/thunlp/ERNIE"> this other project also named ERNIE</a>, 
+<main>
+<img style="float:left; display: none"; src="ERNIE.png" width="250" height="200" hspace ="10" vspace="5">
+
+<p>
+    <a href="https://github.com/NETESOLUTIONS/ERNIE">ERNIE (Enhanced Research Network Informatics Environment)</a>
+    originates from (i) a thought experiment (inspired by Williams et al. Cell 163:21-23, 2015) intended to address the research assessment problem (ii) our  prior experience in building a database of linked data for internal use by a federal agency. These interests grew into an effort to create ERNIE as a knowledge resource for research assessment that would aggregate diverse data for discover and enable multidimensional measurements of research achivements while being accesible to the broader community. ERNIE is designed and developed by <a href="https://www.nete.com">NET ESolutions Corporation (NETE)</a>. The project has been funded in part as a Fast Track Small Business Innovative Research award with Federal funds 
+from the National Institute on Drug Abuse, National Institutes of Health, US Department of Health and Human Services. In Feb 2018, Phase I was completed. Phase II has since been awarded and commenced on Sept30, 2018. Phase II is focused on building a user community and 'productionizing' the platform. We gratefully acknowledge constructive critique and advice from the Program staff at NIDA.</p>
+    <p>We are not involved  with <a href="https://github.com/thunlp/ERNIE"> this other project also named ERNIE</a>, 
 which contains source code for a language representation model. However, we have exchanged cordial communications 
-with the thunlp/ERNIE folks and wished them the same success that we aspire to. </p>
+with the thunlp/ERNIE folks and wished them the same success that we aspire to.</p>
+    <p>ERNIE is a data platform, with analytical workflows, that enables the discovery and analysis of collaboration networks in scientific research.  In its first phase of development, ERNIE was <a href="https://doi.org/10.1101/371955">tested</a> using case studies spanning drug development, medical devices/diagnostics, behavioral interventions, and solutions for drug discovery. These case studies, focused on substance abuse, relied on our core workflow consisting of data mining, linking, and network analysis.</p>
+    <p>Emphasis is placed on the use of Open Source technologies. At present, ERNIE resides in a PostgreSQL 11 database in a Centos 7.4 VM in the Microsoft Azure cloud. The data in ERNIE are drawn in through custom ETL processes from both publicly available and commercial sources. Additional servers provide Solr and Neo4J support and a Spark cluster is provisioned as needed.  Initial server infrastructure has been set up, 
+core data have been scraped, leased, parsed, loaded, and partially curated and beta-user studies are under way. The project team will add additional data sources as and when they become available. The infrastructure and data model is continuously upgraded as we add new data sources and prune out less useful ones.</p>
+    <p>The project philosophy is an amalgam  of academic-style research and  industrial efficiency by a multidisciplinary team embracing agile practices. Data Engineers, the frontline employees in our group, are typically just out of a Master's degree and are hired on one year contracts. They are expected to become productive within 60 days of joining the team, contribute substantially for the remaining 10 months, and eventually progress to an extermal position with substantially increased material benefits (below). Our Data Engineers have come to us from the University of Southern California, University of Virginia, University of Maryland, University of California Berkeley, Institut d'Étude Politiques de Paris (Sciences Po), University of Massachussetts Lowell, College of William and Mary, and Columbia University. The Data Engineers in our group are drawn from diverse educational backgrounds: systems engineering, mathematics, computer science, business analytics, industrial engineering, and philosophy. The two senior data architects who have contributed to this project over twenty years of industrial experience each in firms like IBM, OpenText, and Price Waterhouse Cooper and were trained at Peking University and Moscow State University respectively. The project leader has a background in biochemistry, immmunology, peer review and program administration at The Ohio State University, Washington University School of Medicine, and NIH. Thus, diversity in training and life experience is a feature of this group and we believe that it plays a significant and positive role in the way we operate.</p>
+    <p>Recently, we formalized a partnering agreement with <a href="https://www.elsevier.com">Elsevier</a>. As of July 1, 2019 we will have completed transition from Web of Science to  Scopus as the bibliographic backbone of ERNIE. Similarly for patents, we will be using using IPDD from <a href="https://www.lexisnexis.com/en-us/gateway.page">Lexis-Nexis</a> instead of the Derwent Patent Citation Index, which we were previously using.</p>
 
-<p>ERNIE is a data platform, with analytical workflows, that enables the discovery and analysis of collaboration 
-networks in scientific research.  In its first phase of development, ERNIE was 
-<a href="https://doi.org/10.1101/371955">tested</a> using case studies spanning drug development, medical 
-devices/diagnostics, behavioral interventions, and solutions for drug discovery. These case studies, focused on 
-substance abuse, relied on our core workflow consisting of data mining, linking, and network analysis. </p> 
-
-<p> Emphasis is placed on the use of Open Source technologies. At present, ERNIE resides in a PostgreSQL 
-11 database in a Centos 7.4 VM in the Microsoft Azure cloud. The data in ERNIE are drawn in through custom 
-ETL processes from both publicly available and commercial sources. Additional servers provide Solr and 
-Neo4J support and a Spark cluster is provisioned as needed.  Initial server infrastructure has been set up, 
-core data have been scraped, leased, parsed, loaded, and partially curated and beta-user studies are under way. 
-The project team will add additional data sources as and when they become available. The infrastructure and data 
-model is continuously upgraded as we add new data sources and prune out less useful ones.</p> 
-
-<p>The project philosophy is an amalgam  of academic-style research and  industrial efficiency by a 
-multidisciplinary team embracing agile practices. Data Engineers, the frontline employees in our group, 
-are typically just out of a Master's degree and are hired on one year contracts. They are expected to 
-become productive within 60 days of joining the team, contribute substantially for the remaining 10 months, 
-and eventually progress to an extermal position with substantially increased material benefits (below). 
-Our Data Engineers have come to us from the University of Southern California, University of Virginia, 
-University of Maryland, University of California Berkeley, Institut d'Étude Politiques de Paris (Sciences Po), University of Massachussetts Lowell, College of William and Mary, and Columbia University. The Data Engineers in 
-our group are drawn from diverse educational backgrounds: systems engineering, mathematics, computer science, 
-business analytics, industrial engineering, and philosophy. The two senior data architects who have contributed 
-to this project over twenty years of industrial experience each in firms like IBM, OpenText, and Price Waterhouse 
-Cooper and were trained at Peking University and Moscow State University respectively. The project leader has a 
-background in biochemistry, immmunology, peer review and program administration at The Ohio State University, Washington 
-University School of Medicine, and NIH. Thus, diversity in training and life experience is a feature of this 
-group and we believe that it plays a significant and positive role in the way we operate.</p>
-
-<p>Recently, we formalized a partnering agreement with <a href="https://www.elsevier.com">Elsevier</a>. As of 
-July 1, 2019 we will have completed transition from Web of Science to  Scopus as the bibliographic backbone of 
-ERNIE. Similarly for patents, we will be using using IPDD from 
-<a href="https://www.lexisnexis.com/en-us/gateway.page">Lexis-Nexis</a> instead of the Derwent Patent Citation 
-Index, which we were previously using </p>
-
-Members of the ERNIE team  (present and past) are listed below along with others who contributed in various 
-measures to development and implementation of the concept.
+Members of the ERNIE team (present and past) are listed below along with others who contributed in various measures to development and implementation of the concept.
 
 <ul>
   <li>Avon Davey (NETE)</li>
@@ -126,7 +86,7 @@ We extend our footprint through collaborations with academics. Presently,
 	year = {2018} <br>
 }</font>
 </p>
-</div>
+</main>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108396886-4"></script>
