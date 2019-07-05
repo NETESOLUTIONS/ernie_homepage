@@ -136,14 +136,25 @@ header .sub-title {
 .callout {
     background-color: #6f0e1b;
     background: linear-gradient(45deg, #960849 0%, #ea6c2f 100%);
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
     text-align: center;
 }
 
 .callout a {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
     color: #fff;
     vertical-align: middle;
     text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.callout a:hover,
+.callout a:focus {
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(111, 14, 27, 0.5); */
 }
 
 .callout img {
@@ -154,6 +165,13 @@ header .sub-title {
 
 .content {
     padding: 2rem;
+}
+
+.ernie-sketch {
+    float: right;
+    width: 200px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 aside {
