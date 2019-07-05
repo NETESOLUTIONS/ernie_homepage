@@ -211,7 +211,7 @@ aside {
 
 main {
     /* display: none;*/
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     font-size: 1rem;
     line-height: 1.75rem;
     max-width: 45rem;
@@ -223,4 +223,18 @@ main ul {
     border-radius: 0.5rem;
     background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
     list-style-position: inside;
+}
+
+.citation {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ddd;
+    color: rgb(37, 102, 187);
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 450px) {
+    .citation {
+        word-break: break-word;
+    }
 }
