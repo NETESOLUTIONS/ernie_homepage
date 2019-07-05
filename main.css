@@ -1,0 +1,226 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fff;
+}
+
+a {
+    color: rgb(212, 42, 20);
+}
+
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+/*div {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 30px;
+}*/
+
+.nete-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nete-logo img {
+    height: 30px;
+    margin-right: 2px;
+}
+
+.main-icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    fill: #fff;
+    /* width: 10rem; */
+    height: 5.6rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* padding: 0.5rem 2rem; */
+    width: 100%;
+    /* background-color: rgba(0,0,0,0.25); */
+    background: linear-gradient(45deg, rgba(212, 20, 90, 1) 0%, rgba(251, 177, 59, 1) 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.nav-inner {
+    padding: 0.5rem 2rem;
+}
+
+.nav-links {
+    float: right;
+}
+
+nav a img {
+    width: 2rem;
+}
+
+.nav-icon {
+    width: 1.8rem;
+    fill: #fff;
+}
+
+header {
+    position: relative;
+    padding: 4rem 2rem;
+    height: 40vh;
+    background: #000;
+    /* background: rgb(249,139,107);
+    background: linear-gradient(90deg, rgba(249,139,107,1) 0%, rgba(244,88,102,1) 100%); */
+
+    /* background: linear-gradient(45deg, #4F00BC 0%, #29ABE2 100%); */
+    /* background: linear-gradient(45deg, #ED1C24 0%, #FCEE21 100%); */
+    background: linear-gradient(45deg, #D4145A 0%, #FBB03B 100%);
+    text-align: center;
+}
+
+header .site-title,
+header .sub-title {
+    color: #fff;
+}
+
+.site-title {
+    position: absolute;
+    left: 0;
+    bottom: 10vh;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.sub-title {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 0.35rem;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .sub-title {
+        font-size: 6vw;
+    }
+}
+
+.callout {
+    background-color: #6f0e1b;
+    background: linear-gradient(45deg, #960849 0%, #ea6c2f 100%);
+    /* padding: 1rem 2rem; */
+    text-align: center;
+}
+
+.callout a {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.callout a:hover,
+.callout a:focus {
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(111, 14, 27, 0.5); */
+}
+
+.callout img {
+    width: 30px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.ernie-sketch {
+    float: right;
+    width: 200px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+aside {
+    width: 300px;
+    float: right;
+}
+
+.sidebar-links {
+    width: 100%;
+    /* background-color: #D4145A; */
+    /* background-color: #ffe1e1; */
+    /* background: linear-gradient(45deg, #D4145A 0%, #FBB03B 100%); */
+    /* background: linear-gradient(45deg, #D4145A 0%, #ff7b66 100%); */
+    /* padding: 0.5rem;
+    border-radius: 0.5rem; */
+}
+
+.sidebar-links a {
+    display: block;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
+}
+
+.sidebar-links img {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    width: 50px;
+}
+
+main {
+    /* display: none;*/
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    max-width: 45rem;
+}
+
+main ul {
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
+    list-style-position: inside;
+}
