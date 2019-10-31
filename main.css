@@ -133,6 +133,10 @@ header .sub-title {
     }
 }
 
+.sub-header {
+    font-size: 1.5em;
+}
+
 .callout {
     background-color: #6f0e1b;
     background: linear-gradient(45deg, #960849 0%, #ea6c2f 100%);
@@ -175,7 +179,8 @@ header .sub-title {
 }
 
 aside {
-    width: 300px;
+    width: calc((100vw - 45rem) / 2);
+    max-width: 300px;
     float: right;
 }
 
@@ -190,7 +195,7 @@ aside {
 }
 
 .sidebar-links a {
-    display: block;
+    display: inline-block;
     margin-bottom: 1rem;
     vertical-align: middle;
     width: 100%;
@@ -207,6 +212,29 @@ aside {
     margin-right: 0.5rem;
     vertical-align: middle;
     width: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 45rem;
+        width: 100%;
+        float: none;
+    }
+    .sidebar-links {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    .sidebar-links a {
+        width: calc(50% - 1.5rem);
+        float: left;
+    }
+    .sidebar-links a + a {
+        margin-left: 1rem;
+    }
 }
 
 main {
