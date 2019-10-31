@@ -134,6 +134,7 @@ header .sub-title {
 }
 
 .sub-header {
+    margin-top: 0;
     font-size: 1.5em;
 }
 
@@ -167,8 +168,20 @@ header .sub-title {
     vertical-align: middle;
 }
 
-.content {
+.content-wrapper {
     padding: 2rem;
+}
+
+.content {
+    /* padding: 2rem; */
+    margin: 1rem auto 2rem;
+    /* max-width: 45rem; */
+    max-width: 52rem;
+    clear: both;
+}
+
+.content * {
+    box-sizing: border-box;
 }
 
 .ernie-sketch {
@@ -179,8 +192,10 @@ header .sub-title {
 }
 
 aside {
-    width: calc((100vw - 45rem) / 2);
+    /* width: calc((100vw - 45rem) / 2); */
+    width: 100%;
     max-width: 300px;
+    /* padding-left: 20px; */
     float: right;
 }
 
@@ -199,7 +214,7 @@ aside {
     margin-bottom: 1rem;
     vertical-align: middle;
     width: 100%;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 1.25rem;
     color: #000;
@@ -208,10 +223,62 @@ aside {
     background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
 }
 
-.sidebar-links img {
+.sidebar-links img,
+.sidebar-link img {
     margin-right: 0.5rem;
     vertical-align: middle;
     width: 50px;
+}
+
+.sidebar-box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* padding: 0.5rem; */
+    /* border-radius: 0.5rem; */
+    /* background-color: #f2f2f2; */
+    /* background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%); */
+    font-size: 1.25rem;
+}
+
+.sidebar-link {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    /* background-color: #ad2943; */
+    background-color: #a51f45;
+    color: #fff;
+    /* background-color: #ffe0b6;
+    color: #000; */
+    transition: 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus {
+    background-color: #de3052;
+    /* background-color: #e35253; */
+}
+
+.sidebar-link + .sidebar-link {
+    background-color: #d03352;
+}
+
+.sidebar-link + .sidebar-link:hover,
+.sidebar-link + .sidebar-link:focus {
+    background-color: #e35253;
+}
+
+.sidebar-link-text {
+    display: inline-block;
+    margin-top: -0.35em;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.sidebar-link .sub-title {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -239,10 +306,13 @@ aside {
 
 main {
     /* display: none;*/
-    margin: 0 auto 2rem;
+    /* margin: 0 auto 2rem; */
+    float: left;
     font-size: 1rem;
     line-height: 1.75rem;
-    max-width: 45rem;
+    width: calc(52rem - 300px);
+    padding-right: 20px;
+    /* max-width: 45rem; */
 }
 
 main ul {
@@ -254,6 +324,7 @@ main ul {
 }
 
 .citation {
+    margin-bottom: 2rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 2px solid #ddd;
