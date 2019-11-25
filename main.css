@@ -203,24 +203,38 @@ aside {
     width: 100%;
     /* background-color: #D4145A; */
     /* background-color: #ffe1e1; */
-    /* background: linear-gradient(45deg, #D4145A 0%, #FBB03B 100%); */
-    /* background: linear-gradient(45deg, #D4145A 0%, #ff7b66 100%); */
-    /* padding: 0.5rem;
-    border-radius: 0.5rem; */
+    background-color: #f2f2f2;
+    /* background: linear-gradient(45deg, #D4145A 0%, #FBB03B 100%);
+    background: linear-gradient(45deg, #D4145A 0%, #ff7b66 100%); */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .sidebar-links a {
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     vertical-align: middle;
     width: 100%;
     text-align: left;
     text-decoration: none;
     font-size: 1.25rem;
     color: #000;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
+    border-bottom: 4px solid #fff;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    transition: 0.3s;
+    /* border-radius: 0.5rem; */
+    /* border: 2px solid #fff; */
+    /* background-color: #fff; */
+    /* background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%); */
+}
+
+.sidebar-links a:hover,
+.sidebar-links a:focus {
+    border-color: #FBB03B;
+}
+
+.sidebar-links a + a {
+    margin-top: 0.5rem;
 }
 
 .sidebar-links img,
@@ -281,29 +295,6 @@ aside {
     font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 1000px) {
-    aside {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        max-width: 45rem;
-        width: 100%;
-        float: none;
-    }
-    .sidebar-links {
-        display: block;
-        width: 100%;
-        clear: both;
-    }
-    .sidebar-links a {
-        width: calc(50% - 1.5rem);
-        float: left;
-    }
-    .sidebar-links a + a {
-        margin-left: 1rem;
-    }
-}
-
 main {
     /* display: none;*/
     /* margin: 0 auto 2rem; */
@@ -336,4 +327,35 @@ main ul {
     .citation {
         word-break: break-word;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        width: 100%;
+        max-width: 45rem;
+        float: none;
+    }
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 45rem;
+        width: 100%;
+        float: none;
+    }
+    .sidebar-links {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+    /* .sidebar-links a {
+        width: calc(50% - 1.5rem);
+        float: left;
+    }
+    .sidebar-links a + a {
+        margin-left: 1rem;
+    } */
 }
