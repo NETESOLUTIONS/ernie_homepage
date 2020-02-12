@@ -289,6 +289,11 @@ aside {
     margin-top: -0.35em;
     vertical-align: middle;
     font-size: 20px;
+    line-height: 1.1em;
+}
+
+.sidebar-link img + .sidebar-link-text {
+    width: calc(100% - 50px - 1rem);
 }
 
 .sidebar-link .sub-title {
@@ -309,10 +314,18 @@ main {
 
 main ul {
     color: #000;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem 0.75rem 1.75rem;
     border-radius: 0.5rem;
     background: linear-gradient(45deg, rgba(255, 160, 124, 0.5) 0%, rgba(255, 215, 101, 0.5) 100%);
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    /* list-style: none; */
+    font-size: 14px;
+    line-height: 1rem;
+    /* letter-spacing: -0.5px; */
+}
+
+main ul li {
+    margin: 0 0 0.75rem 0 ;
 }
 
 .citation {
@@ -327,6 +340,15 @@ main ul {
 @media only screen and (max-width: 450px) {
     .citation {
         word-break: break-word;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    main ul {
+        columns: 1;
+    }
+    main ul li:last-child {
+        margin-bottom: 0;
     }
 }
 
